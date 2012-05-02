@@ -1,0 +1,67 @@
+doctype 5
+html(lang='en')
+  head
+    title Journal
+    != css('main')
+    != js('libs')
+    != js('models')
+    != js('app')
+  body
+    div#top-bar
+      h1 
+      div#search-box
+        input(type='text', placeholder='Search...')
+    div#main
+      div#note-wall
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+        div.mini-note
+          header Sample note
+          div.content
+            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+      //- #div#journal-create
+      //-   div#edit-area
+      //-     textarea(placeholder='Start typing')
+      //-   div#tagging-area
+      //-     input#tag-input(type='text', placeholder='Type a tag and press enter')
+
+    script#journal-create-template(type='text/x-handlebars-template')
+      div#edit-area
+        textarea(placeholder='Start typing')
+      div#tagging-area
+        
