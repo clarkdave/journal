@@ -12,48 +12,9 @@ html(lang='en')
       div#search-box
         input(type='text', placeholder='Search...')
     div#main
-      div#note-wall
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+      
 
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
-        div.mini-note
-          header Sample note
-          div.content
-            p Bla bla bla, bla bla bla, bla bla bla, bla bla bla, bla bla bla
+
       //- #div#journal-create
       //-   div#edit-area
       //-     textarea(placeholder='Start typing')
@@ -64,4 +25,8 @@ html(lang='en')
       div#edit-area
         textarea(placeholder='Start typing')
       div#tagging-area
-        
+
+    script#mini-note-template(type='text/x-handlebars-template')
+      header {{title}}
+      div.content
+        p {{content}}
