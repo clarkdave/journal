@@ -12,4 +12,8 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+app.post('/notes', function(req, res) {
+  res.send(201);
+});
+
 app.listen(3000);

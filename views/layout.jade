@@ -12,6 +12,7 @@ html(lang='en')
       div#search-box
         input(type='text', placeholder='Search...')
     div#main
+
       
 
 
@@ -27,6 +28,7 @@ html(lang='en')
       div#tagging-area
 
     script#mini-note-template(type='text/x-handlebars-template')
-      header {{title}}
-      div.content
-        p {{content}}
+      div.inner
+        header {{title}}
+        div.content
+          p {{content}}
