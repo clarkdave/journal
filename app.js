@@ -11,8 +11,6 @@ var Note = mongoose.model('Note', new Schema({
   tags: [String]
 }));
 
-
-
 var app = express.createServer();
 
 app.configure(function() {
@@ -24,6 +22,14 @@ app.configure(function() {
 
 app.get('/', function(req, res) {
   res.render('index');
+});
+
+app.get('/notes', function(req, res) {
+  Note.find({}, function (err, docs) {
+    if (err) return res.send(500);
+    res.contentType('application/json');
+    res.send(docs);
+  });
 });
 
 app.post('/notes', function(req, res) {

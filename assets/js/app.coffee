@@ -37,6 +37,7 @@ class app.views.NoteWall extends Backbone.View
     #@template = Handlebars.compile(src)
     # bind to main note collection
     app.notes.on('add', @addOne, @)
+    app.notes.on('reset', @addAll, @)
   
   render: ->
     return @
@@ -44,6 +45,9 @@ class app.views.NoteWall extends Backbone.View
   addOne: (note) ->
     mini_note = new app.views.MiniNote model: note
     @$el.append mini_note.render().el
+  
+  addAll: (collection) ->
+    collection.each (n) => @addOne(n)
 
 
 class app.views.MiniNote extends Backbone.View
@@ -80,6 +84,8 @@ $(document).ready ->
 
   wall = new app.views.NoteWall()
   $('#main').append wall.render().el
+
+  app.notes.fetch()
 
   # app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
   # app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
