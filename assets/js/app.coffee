@@ -81,10 +81,10 @@ $(document).ready ->
   wall = new app.views.NoteWall()
   $('#main').append wall.render().el
 
-  app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
-  app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
-  app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
-  app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
-  app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
+  # app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
+  # app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
+  # app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
+  # app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
+  # app.notes.create title: 'test', content: 'lorem ipsum larum dipsum'
 
   Backbone.history.start({ pushState: true })

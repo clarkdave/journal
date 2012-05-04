@@ -12,7 +12,8 @@
     "express": "*",
     "connect-assets": "*",
     "less": "*",
-    "jade": "*"
+    "jade": "*",
+    "mongoose": "*"
   },
   "devDependencies": {}
 }
